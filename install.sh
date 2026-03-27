@@ -10,14 +10,14 @@ echo "========================================="
 echo ""
 
 # 1. Docker
-if ! command -v docker &>/dev/null; then
-#    echo "📦 Устанавливаю Docker..."
-    # apt-get update -qq
-    # apt-get install -y -qq docker.io >/dev/null 2>&1
-    systemctl enable --now docker >/dev/null 2>&1
-    echo "   ✅ Docker установлен"
-else
-    echo "   ✅ Docker уже установлен"
+# if ! command -v docker &>/dev/null; then
+# #    echo "📦 Устанавливаю Docker..."
+#     # apt-get update -qq
+#     # apt-get install -y -qq docker.io >/dev/null 2>&1
+#     systemctl enable --now docker >/dev/null 2>&1
+#     echo "   ✅ Docker установлен"
+# else
+#     echo "   ✅ Docker уже установлен"
 fi
 
 # 2. Генерируем fake-TLS секрет
